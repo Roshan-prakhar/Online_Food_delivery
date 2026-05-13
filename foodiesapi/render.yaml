@@ -4,7 +4,8 @@ services:
     name: foodies-api
     runtime: docker
     plan: free
-    region: oregon
+    region: singapore
+    rootDir: foodiesapi
     dockerContext: .
     dockerfilePath: ./Dockerfile
     healthCheckPath: /actuator/health
