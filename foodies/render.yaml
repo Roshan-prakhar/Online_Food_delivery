@@ -1,0 +1,17 @@
+services:
+  # Foodies Customer App
+  - type: web
+    name: foodies-customer
+    env: static
+    plan: free
+    buildCommand: "npm run build"
+    publishDir: dist
+    healthCheckPath: /
+    
+    envVars:
+      - key: VITE_API_URL
+        value: https://swito-1.onrender.com/api
+      - key: VITE_APP_NAME
+        value: Foodies
+      - key: VITE_PAYMENT_MODE
+        value: dummy

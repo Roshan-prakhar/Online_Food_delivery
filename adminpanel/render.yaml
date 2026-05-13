@@ -1,0 +1,16 @@
+services:
+  # Admin Panel - React App
+  - type: web
+    name: foodies-admin
+    env: static
+    plan: free
+    buildCommand: "npm run build"
+    publishDir: dist
+    healthCheckPath: /
+    
+    # Environment variables
+    envVars:
+      - key: VITE_API_URL
+        value: https://swito-1.onrender.com/api
+      - key: VITE_APP_NAME
+        value: Foodies Admin

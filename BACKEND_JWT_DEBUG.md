@@ -88,7 +88,7 @@ JWT Util - Validation exception: Invalid JWT signature
 ### **✅ Fix 1: Verify JWT Secret Environment Variable**
 ```bash
 # Check Render environment variables
-JWT_SECRET=1361ae1fcc3a6babe6a9ed6d570fe7891753d678bfd2a07f9abc173f747d83654425838f4951f746a6288995eac275b3452aa336b99ae3f5749f4c43a50f0591
+JWT_SECRET=<your_64_char_random_hex_secret>
 ```
 
 ### **✅ Fix 2: Check Token Generation vs Validation**
