@@ -6,10 +6,12 @@ import { useState } from 'react';
 const Home = () => {
   const [category, setCategory] = useState('All');
   return (
-    <main className='container'>
+    <main style={{ backgroundColor: '#000000', minHeight: '100vh' }}>
       <Header />
-      <ExploreMenu category={category} setCategory={setCategory} />
-      <FoodDisplay category={category} searchText={''}/>
+      <div className="container">
+        <ExploreMenu category={category} setCategory={setCategory} />
+        <FoodDisplay category={category} searchText={''}/>
+      </div>
     </main>
   )
 }
