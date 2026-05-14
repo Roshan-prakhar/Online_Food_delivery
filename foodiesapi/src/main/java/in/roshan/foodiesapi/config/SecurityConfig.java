@@ -47,6 +47,7 @@ public class SecurityConfig {
                         .requestMatchers(new AntPathRequestMatcher("/api/foods/**")).permitAll()
                         .requestMatchers(new AntPathRequestMatcher("/api/orders/all")).permitAll()
                         .requestMatchers(new AntPathRequestMatcher("/api/orders/status/**")).permitAll()
+                        .requestMatchers(new AntPathRequestMatcher("/error")).permitAll()
                         .anyRequest().authenticated())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
