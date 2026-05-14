@@ -1,3 +1,11 @@
 .table td {
     vertical-align: middle;
 }
+
+.table tbody tr:hover {
+    background-color: #1a1a1a !important;
+}
+
+.table tbody tr {
+    transition: background-color 0.3s ease;
+}
