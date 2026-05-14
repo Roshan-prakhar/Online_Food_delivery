@@ -131,3 +131,5 @@ const ListFood = () => {
     </div>
   );
 };
+
+export default ListFood;
