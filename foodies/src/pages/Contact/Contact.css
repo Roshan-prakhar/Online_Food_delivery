@@ -1,10 +1,29 @@
 .contact-form {
-    background-color: #f8f9fa;
+    background-color: #111111;
     border-radius: 20px;
 }
 
 .custom-input {
-    border-radius: 10px;
-    padding: 12px;
-    border: 2px solid #e9ecef;
+    border-radius: 12px;
+    padding: 14px 16px;
+    border: 2px solid #2a2a2a;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.custom-input:focus {
+    border-color: #f5a623;
+    box-shadow: 0 0 0 0.25rem rgba(245, 166, 35, 0.15);
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.custom-input::placeholder {
+    color: #6b6b6b;
+}
+
+.contact-form .form-label {
+    margin-bottom: 8px;
+    font-weight: 500;
 }

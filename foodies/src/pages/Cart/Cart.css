@@ -1,5 +1,5 @@
 .cart-item img {
-    max-width: 100px;
+    max-width: 100%;
     height: auto;
 }
 
@@ -8,13 +8,21 @@
 }
 
 .cart-summary {
-    background-color: #f8f9fa;
-    border-radius: 10px;
+    background-color: #111111;
+    border-radius: 16px;
 }
 
 .cart-item hr {
     margin-top: 10px;
-    height: 2px;
-    background-color: #e2e2e2;
+    height: 1px;
+    background-color: #2a2a2a;
     border: none;
+}
+
+@media (max-width: 768px) {
+    .cart-item .col-md-3,
+    .cart-item .col-md-5,
+    .cart-item .col-md-2 {
+        margin-bottom: 10px;
+    }
 }
